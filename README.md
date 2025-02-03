@@ -1,4 +1,4 @@
-GAMENTS SALES MANAGEMENT
+GARMENTS SALES MANAGEMENT
 
 Home Page 
 
@@ -10,3 +10,4 @@ Inventory Table
 
 Sales page
 
+![image alt](https://github.com/gayathri-36/Garments/blob/3497bdeef3a8faebd89b0c74b16c8132b8d981a3/Sales%20page.png)
