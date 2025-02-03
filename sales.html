@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Management</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-page">
+        <div class="header">
+            <div class="inventory-img-log">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="logo">
+                Garments Sales Management
+                <div class="welcome">
+                    <p>Record a Sale</p>
+                    <p>Record and manage your garment sales.</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-shirt"></i>Home</a></li>
+                    <li><a href="inventory.html"><i class="fa-solid fa-cubes-stacked"></i>Inventory</a></li>
+                    <li><a href="sales.html"><i class="fa-solid fa-heart"></i>Sales</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="sales-main">
+            <div class="sales-form">
+                <form id="sale-form">
+                    <div>
+                        <label for="sale-item">Select Item</label>
+                        <select id="sale-item" required></select>
+                    </div>
+    
+                    <div>
+                        <label for="sale-quantity">Quantity</label>
+                        <input type="number" id="sale-quantity" required min="1">
+                    </div>
+    
+                    <div class="sale-button">
+                        <button type="submit">Record Sale</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="sales-report">
+                <h3>Sales Report</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity Sold</th>
+                            <th>Total Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sales-list">
+                        <!-- Sales data goes here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="sales.js"></script>
+</body>
+</html>
